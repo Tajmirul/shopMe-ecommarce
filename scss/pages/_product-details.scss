@@ -1,0 +1,47 @@
+.zoomWrapper {
+    margin: auto;
+}
+
+/* Rating Star Widgets Style */
+.rating-stars ul {
+	padding:0;
+}
+.rating-stars ul > li.star {
+	display:inline-block;
+}
+
+.rating-stars ul > li.star > i {
+	font-size: 1.4rem;
+	color:#ccc;
+}
+
+.nice-number{
+	button{
+		border: 1px solid #dee2e6;
+		background-color: $color-white;
+	}
+	button, input{
+		padding: .2rem .5rem;
+		font-size: 1.4rem;
+	}
+}
+
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active{
+	background-color: $theme-color;
+	color: $color-white;
+}
+
+.reviews{
+	tr{
+		td{
+			p{
+				width: 5rem;
+			}
+
+			&:first-child{
+				width: 17rem;
+			}
+		}
+
+	}
+}

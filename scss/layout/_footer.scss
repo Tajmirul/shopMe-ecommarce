@@ -1,0 +1,16 @@
+.subscribe-form{
+	position: relative;
+
+	input{
+		width: 100%;
+	}
+
+	button{
+		position: absolute;
+		font-size: 2rem;
+		height: 100%;
+		width: 3rem;
+		right: 0;
+		top: 0;
+	}
+}

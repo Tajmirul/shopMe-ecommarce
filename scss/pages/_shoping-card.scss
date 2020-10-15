@@ -1,0 +1,15 @@
+.small-texts{
+	line-height: 1.5rem;
+}
+.product-img{
+	width: 8rem;
+}
+.action-btn{
+	height: 3rem;
+	width: 3rem;
+	@include flex-center;
+	color: $color-white !important;
+	background-color: rgba($color-black, .7);
+	margin: 0.5rem;
+	border-radius: 3px;
+}

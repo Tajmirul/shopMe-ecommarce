@@ -1,0 +1,67 @@
+.has-submenu{
+    position: relative;
+
+    .submenu{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: $color-white;
+        z-index: 1;
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-3px);
+        transition: .3s;
+        border: 1px solid rgba($color-black, .1);
+        border-radius: 3px;
+
+        li{
+            text-align: center;
+/*            a{
+                color: $text-black;
+            }*/
+        }
+        &.small{
+            width: 10rem;
+        }
+        &.middle{
+            width: 20rem;
+        }
+        &.mega{
+            width: calc(100% - 3rem);
+            left: 1.5rem;
+        }
+    }
+
+    &:hover > .submenu{
+        opacity: 1;
+        visibility: visible;
+        transform: translate(0)
+    }
+}
+.has-megamenu{
+    position: static;
+}
+
+
+.slideDown{
+    position: relative;
+    &-inner{
+        cursor: pointer;
+    }
+
+    & > ul{
+        position: absolute;
+        top: calc(100% + 2px);
+        left: 0;
+        background-color: darken($color-white, 3) !important;
+        width: 18rem;
+        z-index: 1;
+        display: none;
+
+        li{
+            a{
+                color: $text-black;
+            }
+        }
+    }
+}

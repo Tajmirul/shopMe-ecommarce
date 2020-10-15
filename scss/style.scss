@@ -1,0 +1,28 @@
+// typography --------------------------
+@import 'typography/variables';
+@import 'typography/resets';
+@import 'typography/mixins';
+@import 'typography/utilites';
+@import 'typography/common';
+
+// layout --------------------------
+@import 'layout/home';
+@import 'layout/header';
+@import 'layout/footer';
+
+// components --------------------------
+@import 'components/banner';
+@import 'components/slider';
+@import 'components/navbar';
+@import 'components/submenu';
+@import 'components/side-bar';
+@import 'components/animations';
+@import 'components/sign-up';
+
+// pages ------------------------------
+@import 'pages/product-details';
+@import 'pages/shoping-card';
+@import 'pages/search-results';
+
+
+@import 'components/responsive';

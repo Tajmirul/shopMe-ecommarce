@@ -1,0 +1,204 @@
+.overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba($color-black, .9);
+    z-index: 3;
+    display: none;
+    transition: .3s;
+}
+
+// preloader ---------
+.preloader{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: $color-white;
+    @include flex-center;
+    z-index: 4;
+
+    &-inner{
+        width: 5rem;
+        height: 5rem;
+        border-radius: 50%;
+        border: 5px solid $theme-color-dark;
+        border-bottom-color: transparent;
+            animation: preloader 1s cubic-bezier(1, 0.57, 0.25, 0.63) infinite;
+    }
+}
+
+// go to top button -------------------------
+.go-to-top {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    background-color: $theme-color-dark;
+    color: #fff;
+    font-size: 3rem;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all .2s;
+    @include flex-center;
+    transform: translateY(2rem);
+    visibility: hidden;
+    opacity: 0;
+    z-index: 1;
+
+    &.active {
+        transform: translateY(0rem);
+        visibility: visible;
+        opacity: 1;
+    }
+
+    &:hover {
+        transform: translateY(-4px);
+    }
+
+    &:active {
+        transform: translateY(-2px);
+    }
+}
+
+
+.add{
+    font-size: 2rem;
+    @include flex-center;
+    width: 100%;
+    background: rgba($color-black, .3);
+}
+
+// social links
+.social-links{
+    .google{
+        background-color: #ea4335;
+        color: $color-white;
+    }
+    .facebook{
+        background-color: #1877f2;
+        color: $color-white;
+    }
+}
+
+// slider 
+.arrows{
+    z-index: 2;
+    background: rgba($color-black, .5);
+    border-radius: 5px;
+    color: $color-white;
+    position: absolute;
+    top: 50%;
+    right: 2rem;
+    // transform: translateY(-50%);
+    height: 5rem;
+    width: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    cursor: pointer;
+    opacity: 0;
+    transition: .3s;
+
+    &.prev{
+        transform: translateY(-100%)
+    }
+    &.next{
+        transform: translateY(50%)
+    }
+
+}
+
+.slider:hover > .arrows{
+    opacity: 1;
+}
+
+
+ul.main-ul{
+    width: 100%;
+    max-width: 70rem;
+    li{
+        display: block;
+        padding: 1rem 0;
+
+        a{
+            float: left;
+            transition: .3s;
+
+            &:hover{
+                transform: translateX(1rem);
+                color: $theme-color !important;
+            }
+        }
+
+        i{
+            float: right;
+            cursor: pointer;
+            font-size: 2rem;
+        }
+
+        ul{
+            padding: 1rem 2rem;
+            clear: both;
+            // background: rgba($color-black, .07);
+            display: none;
+        }
+    }
+
+}
+
+// for offer -----------
+.offer{
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+    padding: .4rem .7rem;
+    line-height: 1.2;
+    text-align: center;
+}
+
+.product-card-hover{
+    position: relative;
+    &-inner{
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        text-align: center;
+        @include flex-center;
+        flex-direction: column;
+        opacity: 0;
+        transition: .3s;
+        z-index: 1;
+        a{
+            width: 12rem;
+            display: block;
+            color: #fff;
+            font-size: 1.4rem;
+            border-radius: 3px;
+            margin: 1rem auto;
+            padding: 1rem 1.5rem;
+        }
+    }
+    .button-1{
+        background-color: rgb(100,100,100);
+        &:hover{
+            background: rgb(50,50,50);
+        }
+    }
+    .button-2{
+        background-color: $theme-color;
+        &:hover{
+            background-color: $theme-color-dark;
+        }
+    }
+    &:hover > &-inner{
+        opacity: 1;
+    }
+}

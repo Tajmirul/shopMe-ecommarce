@@ -1,0 +1,24 @@
+// font sizes ------------------------------------
+.fz-very-small{ font-size: 1.2rem; }
+.fz-small{ font-size: 1.4rem; }
+.fz-16{ font-size: 1.6rem; }
+.fz-20{ font-size: 2rem; }
+
+// colors ------------------------------------
+.text-theme{ color: $theme-color !important; }
+.bg-white{ background-color: $color-white !important; }
+.bg-theme{ background-color: $theme-color !important; }
+.text-golden{ color: $color-golden !important; }
+
+.text-theme-dark, .hover-text-theme-dark{ color: $theme-color-dark }
+
+.hover-text-theme:hover, a.hover-text-theme:hover{ color: $theme-color !important; }
+.hover-text-white:hover, a.hover-text-white:hover{ color: $color-white !important; }
+
+.hover-bg-theme:hover, a.hover-bg-theme:hover{ background-color: $theme-color-dark !important; }
+.hover-bg-dark-theme:hover, a.hover-bg-dark-theme:hover{ background-color: $theme-color-dark !important; }
+
+a.hover-bg-theme-dark:hover{ background-color: $theme-color-dark !important; color: $color-white !important; }
+
+.border-2{ border: 2px solid #dee2e6 !important; }
+.border-theme{ border-color: $theme-color !important; }

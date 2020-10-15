@@ -1,0 +1,27 @@
+.slider-type-4{
+	width: 35rem;
+	margin-top: 3rem;
+
+	.slick-list{
+		width: 25rem;
+		margin: auto;
+	}
+
+	.arrows{
+		opacity: 1;
+		height: 3rem;
+		width: 2.5rem;
+		border-radius: 5px !important;
+		font-size: 1.6rem;
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+
+		&.prev{
+			left: 0;
+		}
+		&.next{
+			left: calc(100% - 2.5rem);
+		}
+	}
+}
